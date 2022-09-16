@@ -1,0 +1,82 @@
+#include <iostream>
+using namespace std;
+char c1='_',c2='_',c3='_',c4='_',c5='_',c6='_',c7='_',c8='_',c9='_';
+int posicion;
+
+int main()
+{
+  cout<<"Walter Gabriel Valdivia Bejarano "<<endl;
+  cout<<"Bianca Malena Diaz Villamil "<<endl;
+  cout<<"Tres en Raya "<<endl;
+  //mostrando el tablero
+  cout<<c1<<"|"<<c2<<"|"<<c3<<"|"<<endl;
+  cout<<c4<<"|"<<c5<<"|"<<c6<<"|"<<endl;
+  cout<<c7<<"|"<<c8<<"|"<<c9<<"|"<<endl;
+  char p1,p2;
+  cout<<"Ingrese el simbolo para el jugador1 : "; cin>>p1;
+  cout<<"Ingrese el simbolo para el jugador2 : "; cin>>p2;
+  for(int i=1;i<=9;i++){
+    if(i%2==1){
+      cout<<"(JUGADOR1)Ingrese un numero del 1-9 : ";cin>>posicion;
+      switch(posicion){
+        case 1: if(c1 == '_') c1 = p1; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 2: if(c2 == '_') c2 = p1; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 3: if(c3 == '_') c3 = p1; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 4: if(c4 == '_') c4 = p1; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 5: if(c5 == '_') c5 = p1; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 6: if(c6 == '_') c6 = p1; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 7: if(c7 == '_') c7 = p1; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 8: if(c8 == '_') c8 = p1; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 9: if(c9 == '_') c9 = p1; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+      }
+      cout<<c1<<"|"<<c2<<"|"<<c3<<"|"<<endl;
+      cout<<c4<<"|"<<c5<<"|"<<c6<<"|"<<endl;
+      cout<<c7<<"|"<<c8<<"|"<<c9<<"|"<<endl;
+    }
+    if(i%2==0){
+      cout<<"(JUGADOR2)Ingrese un numero del 1-9 : ";cin>>posicion;
+      switch(posicion){
+      
+        case 1: if(c1 == '_') c1 = p2; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 2: if(c2 == '_') c2 = p2; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 3: if(c3 == '_') c3 = p2; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 4: if(c4 == '_') c4 = p2; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 5: if(c5 == '_') c5 = p2; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 6: if(c6 == '_') c6 = p2; else {i--;cout<<"Ingrese una casilla valida<<endl";};break;
+        case 7: if(c7 == '_') c7 = p2; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 8: if(c8 == '_') c8 = p2; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+        case 9: if(c9 == '_') c9 = p2; else {i--;cout<<"Ingrese una casilla valida"<<endl;};break;
+      }
+      cout<<c1<<"|"<<c2<<"|"<<c3<<"|"<<endl;
+      cout<<c4<<"|"<<c5<<"|"<<c6<<"|"<<endl;
+      cout<<c7<<"|"<<c8<<"|"<<c9<<"|"<<endl;
+    }
+    if(i>=5){
+      if(i%2==1){
+      if(c1==c2 and c2==c3) {cout<<"Ganaste JUGADOR1";break;}
+      if(c4==c5 and c5==c6) {cout<<"Ganaste JUGADOR1";break;}
+      if(c7==c8 and c8==c9) {cout<<"Ganaste  JUGADOR1";break;}
+      if(c1==c4 and c4==c7) {cout<<"Ganaste  JUGADOR1";break;}
+      if(c2==c5 and c5==c8) {cout<<"Ganaste  JUGADOR1";break;}
+      if(c3==c6 and c6==c9) {cout<<"Ganaste  JUGADOR1";break;}
+     if(c1==c5 and c5==c9) {cout<<"Ganaste  JUGADOR1";break;}
+     if(c3==c5 and c5==c7) {cout<<"Ganaste  JUGADOR1";break;}
+        }
+      if(i%2==0){
+      if(c1==c2 and c2==c3) {cout<<"Ganaste JUGADOR2";break;}
+      if(c4==c5 and c5==c6) {cout<<"Ganaste JUGADOR2";break;}
+      if(c7==c8 and c8==c9) {cout<<"Ganaste  JUGADOR2";break;}
+      if(c1==c4 and c4==c7) {cout<<"Ganaste  JUGADOR2";break;}
+      if(c2==c5 and c5==c8) {cout<<"Ganaste  JUGADOR2";break;}
+      if(c3==c6 and c6==c9) {cout<<"Ganaste  JUGADOR2";break;}
+     if(c1==c5 and c5==c9) {cout<<"Ganaste  JUGADOR2";break;}
+     if(c3==c5 and c5==c7) {cout<<"Ganaste  JUGADOR2";break;}
+        }
+      
+      
+      
+      
+      }
+    }
+  }
+ 
